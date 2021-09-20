@@ -1,0 +1,47 @@
+@import url('./base.css');
+@import url('./animations.css');
+@import url('./App.css');
+@import url('./firstscreen.css');
+@import url('./secondscreen.css');
+
+@font-face {
+    font-family: 'Black';
+    src: url('../fonts/Poppins/Poppins-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'ExtraBold';
+    src: url('../fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'SemiBold';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url('../fonts/Poppins/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: 'Medium';
+    src: url('../fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'Regular';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'Thin';
+    src: url('../fonts/Poppins/Poppins-Thin.ttf');
+}
+@font-face {
+    font-family: 'Bold-Italic';
+    src: url('../fonts/Poppins/Poppins-BoldItalic.ttf');
+}
+

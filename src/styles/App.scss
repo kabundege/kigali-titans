@@ -1,0 +1,11 @@
+.App{
+    // background: whitesmoke;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 2000px;
+    
+    @media screen and(max-width:500px) {
+      width: 100%;
+    }
+  }
