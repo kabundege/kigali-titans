@@ -1,0 +1,455 @@
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.secondscreen {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.secondscreen .scroll-down {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 10%;
+  left: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen .scroll-down {
+    display: none;
+  }
+}
+
+.secondscreen .scroll-down::before {
+  content: " ";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  bottom: -10%;
+  border-radius: 50%;
+  border-top: 2px solid #222;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.secondscreen .scroll-down img {
+  width: 100%;
+}
+
+.secondscreen section {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen section {
+    width: 100%;
+  }
+}
+
+.secondscreen section ul {
+  list-style: none;
+  width: auto;
+  margin-top: 2em;
+  z-index: 1;
+  position: relative;
+}
+
+.secondscreen section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.secondscreen section ul li span {
+  font-family: Thin;
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen section ul li span {
+    font-size: 1em;
+  }
+}
+
+.secondscreen section h1 {
+  z-index: 1;
+  position: relative;
+  font-family: Medium;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen section h1 {
+    font-size: 1.5em;
+  }
+}
+
+.secondscreen section .first-circle, .secondscreen section .second-circle {
+  background: #FFD900;
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  z-index: 0;
+  top: 25%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: -5px 5px 0px lightgrey;
+          box-shadow: -5px 5px 0px lightgrey;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen section .first-circle, .secondscreen section .second-circle {
+    left: 25%;
+    height: 50%;
+    top: 15%;
+  }
+}
+
+.secondscreen section .second-circle {
+  background: #0581FE;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 30%;
+  width: 65%;
+  -webkit-box-shadow: 5px 5px 0px lightgrey;
+          box-shadow: 5px 5px 0px lightgrey;
+}
+
+.secondscreen section img {
+  width: 80%;
+  z-index: 1;
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen section img {
+    width: 100%;
+  }
+}
+
+.secondscreen form {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.secondscreen form h1 {
+  font-family: 'Bold';
+  font-size: 4em;
+  color: #222;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen form h1 {
+    font-size: 2.5em;
+  }
+}
+
+.secondscreen form h2 {
+  font-family: 'ExtraBold';
+  font-size: 4em;
+  color: transparent;
+  background: -webkit-linear-gradient(-40deg, #FFD900, #0581FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen form h2 {
+    font-size: 1.3em;
+  }
+}
+
+.secondscreen form h3 {
+  font-size: 5em;
+  font-family: ExtraBold;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen form h3 {
+    font-size: 2em;
+    right: -5%;
+  }
+}
+
+.secondscreen form .chechbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5em 1em;
+  border: 1.2px solid #222;
+  cursor: pointer;
+}
+
+.secondscreen form .chechbox span {
+  margin-left: 1em;
+  font-family: Regular;
+  color: #222;
+}
+
+.secondscreen form .chechbox:hover {
+  border: 1.2px solid #E42E90;
+}
+
+.secondscreen form .chechbox:nth-child(5) {
+  margin-bottom: 2.5em;
+}
+
+.secondscreen form .page-counter {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Bold-Italic';
+  color: #333;
+}
+
+.secondscreen form .page-counter span {
+  border-left: .5px solid lightgrey;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen form .page-counter {
+    right: -5%;
+  }
+}
+
+.secondscreen form .loader {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.secondscreen form .loader::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  left: 0;
+  border-radius: 50%;
+  border-top: 2px solid #FFD900;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.secondscreen form .this {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  border: 1.2px solid #0581FE;
+  -webkit-box-shadow: 0px 0px 5px lightgrey;
+          box-shadow: 0px 0px 5px lightgrey;
+}
+
+.secondscreen form .divider {
+  text-align: center;
+  margin: .5em 0;
+  position: relative;
+}
+
+.secondscreen form .divider p {
+  background: white;
+  color: grey;
+  padding: .1em .3em;
+  font-family: Regular;
+  position: relative;
+  z-index: 1;
+}
+
+.secondscreen form .divider section {
+  width: 500%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding-bottom: 1px;
+  background: lightgrey;
+  z-index: 1;
+}
+
+.secondscreen form .input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #222;
+  width: 35%;
+  margin: .5em 0;
+  padding: .5em;
+}
+
+@media screen and (max-width: 2000px) {
+  .secondscreen form .input-field {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .secondscreen form .input-field {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen form .input-field {
+    width: 70%;
+    padding: .3em;
+  }
+}
+
+.secondscreen form .input-field div {
+  background: #FFD900;
+  padding: .5em;
+}
+
+.secondscreen form .input-field input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 1em;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-family: Regular;
+  font-size: 1em;
+}
+
+.secondscreen form button {
+  background: #0581FE;
+  outline: none;
+  border: none;
+  width: 20%;
+  padding: 1em 0;
+  color: white;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 500px) {
+  .secondscreen form button {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+}
+/*# sourceMappingURL=secondscreen.css.map */
